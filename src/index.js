@@ -4,7 +4,7 @@ import 'src/sass/index.scss';
 import App from 'src/components/App';
 import { Provider } from 'react-redux';
 import store from 'src/store';
-import { HelloWorldComponent, HelloWorldClassComponent } from 'src/example/simpleComponent';
+import { HelloWorldComponent, HelloWorldClassComponent, NestedButtons } from 'src/example/simpleComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +13,7 @@ root.render(
             {/*<App />*/}
             <HelloWorldComponent name="Ana" />
             <HelloWorldClassComponent name="Bean"/>
+            <NestedButtons />
         </Provider>
     </React.StrictMode>,
 );
