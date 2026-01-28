@@ -7,11 +7,12 @@ import store from 'src/store';
 // import { HelloWorldComponent, HelloWorldClassComponent, NestedButtons } from 'src/example/simpleComponent';
 // import { HelloWorldFunctional } from 'src/example/functionalComponents';
 // import { BaseComponent, EnhancedComponent } from 'src/example/highOrderComponent'
-import { ConditionalComponent } from 'src/example/conditionalComponent'
+// import { ConditionalComponent } from 'src/example/conditionalComponent'
+import { RickAndMorty } from 'src/example/rickandmorty';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
+    // <React.StrictMode>
         <Provider store={store}>
             {/*<App />*/}
             {/*<HelloWorldComponent name="Ana" />*/}
@@ -19,7 +20,8 @@ root.render(
             {/*<NestedButtons />*/}
             {/*<HelloWorldFunctional name={1} />*/}
             {/*<EnhancedComponent name="cch" id={0} />*/}
-            <ConditionalComponent isAdmin={true} />
+            {/*<ConditionalComponent isAdmin={true} />*/}
+            <RickAndMorty />
         </Provider>
-    </React.StrictMode>,
+    // </React.StrictMode>,
 );
