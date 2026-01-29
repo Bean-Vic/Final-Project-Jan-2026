@@ -9,6 +9,8 @@ import store from 'src/store';
 // import { BaseComponent, EnhancedComponent } from 'src/example/highOrderComponent'
 // import { ConditionalComponent } from 'src/example/conditionalComponent'
 import { RickAndMorty } from 'src/example/rickandmorty';
+import { UseRefToAccessDOM } from 'src/example/useRefExample';
+import { ProviderComponent } from 'src/example/context/components';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,7 +23,9 @@ root.render(
             {/*<HelloWorldFunctional name={1} />*/}
             {/*<EnhancedComponent name="cch" id={0} />*/}
             {/*<ConditionalComponent isAdmin={true} />*/}
-            <RickAndMorty />
+            {/*<RickAndMorty />*/}
+            {/*<UseRefToAccessDOM />*/}
+            <ProviderComponent />
         </Provider>
     // </React.StrictMode>,
 );
